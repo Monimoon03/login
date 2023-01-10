@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 0.05rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #2a353d;
+  opacity: 0.96;
+  padding: 40px 55px 40px 55px;
+  letter-spacing: 0.07rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 35px 10px rgba(0, 0, 0, 0.404);
+}
+
+.container h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 320px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 20px;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: gray;
+}
+
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -10;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: white;
+  transform: translateY(-20px);
+}
